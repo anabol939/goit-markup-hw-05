@@ -374,6 +374,28 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.overlay-portfolio {
+  width: 205px;
+  height: 16px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 82px;
+  padding-right: 82px;
+  color: var(--first-colour);
+}
 .section3-list {
   display: flex;
   /* justify-content: space-between;*/
@@ -393,6 +415,7 @@ img {
 }
 .section3-item {
   margin-right: 30px;
+  position: relative;
 }
 
 /*===========section4==========*/
