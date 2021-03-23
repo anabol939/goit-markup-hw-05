@@ -197,6 +197,7 @@ img {
 
 .contact-link {
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -298,10 +299,10 @@ img {
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  padding-top: 3px;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-bottom: 3px;
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 6px;
   letter-spacing: 0.03em;
   border-width: 2px;
   outline: none;
@@ -336,8 +337,8 @@ img {
   margin-bottom: 56px;
   justify-content: center;
 }
-.herro-list .herro-link + .herro-link {
-  margin-left: 30px;
+/*.herro-list .herro-link + .herro-link {
+  margin-left: 30px;*/
 }
 /*================ABOUT===========*/
 .about-border {
@@ -594,6 +595,14 @@ link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.partners-link:focus .partners-icon {
+  fill: var(--akcent-color);
+}
+.partners-link:focus .partners-thumb {
+  border: 1px solid var(--akcent-color);
+
+  outline: none;
+}
 
 .container-partners {
   width: 1200px;
@@ -606,6 +615,7 @@ link {
 /*=========footer=======*/
 footer {
   background-color: var(--background-colour);
+  padding: 60px 0;
 }
 .footer-container {
   display: flex;
