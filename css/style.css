@@ -342,7 +342,15 @@ img {
 /*.model-btn1:active {
   box-shadow: none;
 }*/
-
+.teem-list-link-wraper {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.teem-list-link-wraper:hover,
+.teem-list-link-wraper:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .herro-list {
   display: flex;
   margin-bottom: 56px;
@@ -754,11 +762,7 @@ footer {
 .teem-list-link-wraper:focus .overlay {
   transform: translateY(0%);
 }
-.teem-list-link-wraper:hover,
-.teem-list-link-wraper:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -791,12 +795,4 @@ footer {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-.about-list-portfolio:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.teem-list-content-wraper:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
