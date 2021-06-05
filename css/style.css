@@ -214,9 +214,13 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--second-colour);
+  color: var(--vectors);
+  fill: var(--vectors);
 }
 .header-icons {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-icons-tel {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover .header-icons,
@@ -225,8 +229,6 @@ img {
 .contact-link:focus {
   color: var(--akcent-color);
   fill: var(--akcent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list {
@@ -537,16 +539,13 @@ link {
   height: 44px;
   border-radius: 50%;
   background-color: var(--first-colour);
-}
-.icons-thumb {
-  display: flex;
-  height: 44px;
-  width: 44px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-list-item {
+  display: flex;
+  justify-content: space-between;
+}
 .social-list {
   display: flex;
   justify-content: space-between;
@@ -554,14 +553,14 @@ link {
 .social-list-icon {
   fill: var(--vectors);
 }
-.social-list-link:focus .icons-thumb,
-.social-list-link:hover .icons-thumb,
-.social-list-link:focus .social-list-icon,
-.social-list-link:hover .social-list-icon {
+.social-list-link:focus,
+.social-list-link:hover {
   fill: var(--first-colour);
   background-color: var(--akcent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list-icon:hover,
+.social-list-icon:focus {
+  fill: var(--first-colour);
 }
 /*==========components=======*/
 .logo-light-teme {
@@ -576,20 +575,23 @@ link {
   padding-bottom: 94px;
 }
 .partners-icon {
-  fill: var(--vectors);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .partners-link {
-  transition-duration: 2350ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   box-sizing: border-box;
-
   display: flex;
-  align-items: center;
-  justify-content: center;
   fill: var(--vectors);
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--vectors);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
-.partners-thumb {
+/*.partners-thumb {
   width: 170px;
   height: 90px;
   border: 1px solid var(--vectors);
@@ -597,7 +599,7 @@ link {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 .partners-list {
   display: flex;
@@ -608,7 +610,7 @@ link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.partners-link:hover .partners-thumb {
+.partners-link:hover {
   border: 1px solid var(--akcent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
