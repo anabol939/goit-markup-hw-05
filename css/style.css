@@ -546,6 +546,10 @@ link {
   display: flex;
   justify-content: space-between;
 }
+.social-list-icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .social-list {
   display: flex;
   justify-content: space-between;
